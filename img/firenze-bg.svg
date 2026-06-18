@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="fsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0808"/>
+      <stop offset="20%" stop-color="#2a1008"/>
+      <stop offset="45%" stop-color="#7a3010"/>
+      <stop offset="68%" stop-color="#c86820"/>
+      <stop offset="85%" stop-color="#e8a040"/>
+      <stop offset="100%" stop-color="#f0c060"/>
+    </linearGradient>
+    <radialGradient id="fsun" cx="55%" cy="62%" r="30%">
+      <stop offset="0%" stop-color="#fff0b0" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#e89030" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#7a3010" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0e06"/>
+      <stop offset="100%" stop-color="#0a0806"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1200" height="800" fill="url(#fsky)"/>
+  <!-- Sun glow -->
+  <ellipse cx="660" cy="495" rx="280" ry="160" fill="url(#fsun)"/>
+  <!-- Sun -->
+  <circle cx="660" cy="480" r="45" fill="#fff5c0" opacity="0.95"/>
+  <circle cx="660" cy="480" r="35" fill="#ffffee"/>
+
+  <!-- Stars (twilight, faint) -->
+  <g fill="#f5f0e8" opacity="0.4">
+    <circle cx="60" cy="55" r="1.5"/><circle cx="140" cy="28" r="1"/><circle cx="230" cy="78" r="1.5"/>
+    <circle cx="350" cy="42" r="1"/><circle cx="480" cy="22" r="2"/><circle cx="200" cy="120" r="1"/>
+    <circle cx="900" cy="45" r="1.5"/><circle cx="1020" cy="28" r="1"/><circle cx="1130" cy="60" r="1.5"/>
+    <circle cx="1000" cy="100" r="1"/><circle cx="1150" cy="95" r="1.5"/>
+  </g>
+
+  <!-- Ground/hills -->
+  <path d="M 0 680 Q 300 650 600 665 Q 900 680 1200 655 L 1200 800 L 0 800 Z" fill="url(#fground)"/>
+
+  <!-- City buildings (roofline) -->
+  <g fill="#140c06">
+    <rect x="0" y="530" width="70" height="150"/>
+    <rect x="75" y="500" width="55" height="180"/>
+    <rect x="135" y="520" width="80" height="160"/>
+    <rect x="220" y="490" width="50" height="190"/>
+    <rect x="275" y="545" width="65" height="135"/>
+    <rect x="345" y="505" width="55" height="175"/>
+    <!-- Gap for Duomo -->
+    <rect x="760" y="510" width="65" height="170"/>
+    <rect x="830" y="490" width="70" height="190"/>
+    <rect x="905" y="520" width="55" height="160"/>
+    <rect x="965" y="495" width="80" height="185"/>
+    <rect x="1050" y="515" width="60" height="165"/>
+    <rect x="1115" y="490" width="85" height="190"/>
+  </g>
+
+  <!-- Campanile (Bell Tower) di Giotto — tall, slender -->
+  <rect x="420" y="210" width="48" height="350" fill="#120a04"/>
+  <!-- Campanile stripes (white/green/pink in real life, dark here) -->
+  <g fill="#1e1008" opacity="0.6">
+    <rect x="420" y="240" width="48" height="6"/>
+    <rect x="420" y="290" width="48" height="6"/>
+    <rect x="420" y="340" width="48" height="6"/>
+    <rect x="420" y="390" width="48" height="6"/>
+    <rect x="420" y="440" width="48" height="6"/>
+    <rect x="420" y="490" width="48" height="6"/>
+  </g>
+  <!-- Campanile windows/niches -->
+  <g fill="#6a3a10" opacity="0.7">
+    <path d="M 428 255 L 428 278 Q 428 285 435 285 L 455 285 Q 462 285 462 278 L 462 255 Q 462 248 455 248 L 435 248 Q 428 248 428 255 Z"/>
+    <path d="M 428 305 L 428 328 Q 428 335 435 335 L 455 335 Q 462 335 462 328 L 462 305 Q 462 298 455 298 L 435 298 Q 428 298 428 305 Z"/>
+    <path d="M 428 355 L 428 378 Q 428 385 435 385 L 455 385 Q 462 385 462 378 L 462 355 Q 462 348 455 348 L 435 348 Q 428 348 428 355 Z"/>
+    <path d="M 428 405 L 428 428 Q 428 435 435 435 L 455 435 Q 462 435 462 428 L 462 405 Q 462 398 455 398 L 435 398 Q 428 398 428 405 Z"/>
+    <path d="M 428 455 L 428 478 Q 428 485 435 485 L 455 485 Q 462 485 462 478 L 462 455 Q 462 448 455 448 L 435 448 Q 428 448 428 455 Z"/>
+  </g>
+  <!-- Campanile top -->
+  <path d="M 415 215 L 415 195 L 468 195 L 468 215 Z" fill="#0e0804"/>
+  <path d="M 420 198 L 444 175 L 468 198 Z" fill="#0a0602"/>
+
+  <!-- Cathedral nave -->
+  <rect x="470" y="440" width="280" height="120" fill="#100808"/>
+  <!-- Nave roof -->
+  <path d="M 470 440 L 610 410 L 750 440 Z" fill="#0e0606"/>
+
+  <!-- Baptistery (octagonal, in front) -->
+  <path d="M 500 530 L 510 505 L 535 495 L 565 495 L 590 505 L 600 530 L 590 555 L 565 565 L 535 565 L 510 555 Z" fill="#140a04"/>
+
+  <!-- Brunelleschi's DOME — centerpiece -->
+  <!-- Drum (octagonal base of dome) -->
+  <path d="M 530 430 L 540 390 L 560 375 L 610 368 L 660 368 L 710 375 L 730 390 L 740 430 Z" fill="#0e0806"/>
+  <!-- Dome outer shell -->
+  <path d="M 530 430 Q 540 350 610 310 Q 680 350 740 430 Z" fill="#120a06"/>
+  <!-- Dome ribs (8 ribs, simplified) -->
+  <g stroke="#1e1008" stroke-width="3" fill="none" opacity="0.8">
+    <path d="M 635 430 Q 640 360 635 315"/>
+    <path d="M 655 428 Q 665 358 660 315"/>
+    <path d="M 615 428 Q 608 358 610 315"/>
+    <path d="M 675 422 Q 692 352 685 316"/>
+    <path d="M 595 422 Q 580 352 585 316"/>
+    <path d="M 695 410 Q 720 342 708 318"/>
+    <path d="M 575 410 Q 555 342 562 318"/>
+  </g>
+  <!-- Lantern on top of dome -->
+  <rect x="626" y="278" width="18" height="35" fill="#0a0806"/>
+  <path d="M 622 280 L 635 255 L 648 280 Z" fill="#080604"/>
+  <!-- Lantern cross -->
+  <line x1="635" y1="255" x2="635" y2="235" stroke="#c9a84c" stroke-width="2" opacity="0.6"/>
+  <line x1="627" y1="245" x2="643" y2="245" stroke="#c9a84c" stroke-width="2" opacity="0.6"/>
+
+  <!-- Dome oculus / eye windows -->
+  <g fill="#6a3a10" opacity="0.5">
+    <circle cx="600" cy="390" r="6"/>
+    <circle cx="670" cy="390" r="6"/>
+    <circle cx="635" cy="380" r="5"/>
+  </g>
+
+  <!-- Golden glow on Dome from setting sun -->
+  <path d="M 530 430 Q 540 350 610 310 Q 680 350 740 430 Z" fill="#e89030" opacity="0.08"/>
+
+  <!-- Lit windows in buildings -->
+  <g fill="#c9a84c" opacity="0.45">
+    <rect x="10" y="555" width="12" height="18" rx="2"/>
+    <rect x="35" y="570" width="12" height="18" rx="2"/>
+    <rect x="88" y="525" width="12" height="18" rx="2"/>
+    <rect x="148" y="548" width="12" height="18" rx="2"/>
+    <rect x="228" y="515" width="12" height="18" rx="2"/>
+    <rect x="785" y="535" width="12" height="18" rx="2"/>
+    <rect x="840" y="515" width="12" height="18" rx="2"/>
+    <rect x="970" y="520" width="12" height="18" rx="2"/>
+    <rect x="1010" y="542" width="12" height="18" rx="2"/>
+    <rect x="1060" y="538" width="12" height="18" rx="2"/>
+    <rect x="1128" y="512" width="12" height="18" rx="2"/>
+  </g>
+
+  <!-- Arno River (at bottom) -->
+  <path d="M 0 720 Q 300 705 600 712 Q 900 719 1200 705 L 1200 800 L 0 800 Z" fill="#1a1208" opacity="0.8"/>
+  <path d="M 0 728 Q 400 720 800 726 Q 1000 730 1200 722" stroke="#c9803a" stroke-width="1.5" fill="none" opacity="0.2"/>
+
+  <!-- Sun reflection on river -->
+  <ellipse cx="660" cy="745" rx="120" ry="15" fill="#e89030" opacity="0.12"/>
+
+  <!-- Atmospheric haze at horizon -->
+  <rect x="0" y="630" width="1200" height="80" fill="#7a3010" opacity="0.12"/>
+</svg>
