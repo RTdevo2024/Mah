@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour d'Italia — Per Mahasti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="dedication">
+    <p class="ded-per-te">Per te...</p>
+    <p class="ded-name">Mahasti</p>
+  </div>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <section id="hero">
+    <div class="hero-content">
+      <span class="hero-flag">🇮🇹</span>
+      <h1 class="hero-title">Tour d'Italia</h1>
+      <p class="hero-sub">Per Mahasti, con tutto il cuore</p>
+      <button id="begin-btn">Inizia il Viaggio</button>
+    </div>
+  </section>
+
+  <nav id="city-nav">
+    <div class="nav-inner">
+      <button class="nav-btn" data-index="0">Roma</button>
+      <button class="nav-btn" data-index="1">Venezia</button>
+      <button class="nav-btn" data-index="2">Firenze</button>
+      <button class="nav-btn" data-index="3">Amalfi</button>
+      <button class="nav-btn" data-index="4">Cinque Terre</button>
+      <span class="nav-indicator"></span>
+    </div>
+  </nav>
+
+  <main id="tour">
+
+    <section class="city-panel" id="panel-0">
+      <div class="photo-stack" data-depth>
+        <div class="photo-layer bg-layer" data-z="1">
+          <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=1400&q=85&fit=crop" alt="Colosseo, Roma" loading="lazy">
+        </div>
+        <div class="photo-layer fg-layer" data-z="2">
+          <img src="https://images.unsplash.com/photo-1529260830199-42c24126f198?w=700&q=80&fit=crop" alt="Fontana di Trevi" loading="lazy">
+        </div>
+      </div>
+      <div class="city-story">
+        <span class="city-num">01</span>
+        <h2 class="city-name">Roma</h2>
+        <p class="city-sub"><em>La Città Eterna</em></p>
+        <p class="city-desc">جایی که هر سنگفرش هزار سال تاریخ دارد. از کولوسئوم تا فواره تروی، رم شهری است که هرگز فراموش نمی‌شود.</p>
+        <ul class="highlights">
+          <li>Colosseo all'alba</li>
+          <li>Fontana di Trevi</li>
+          <li>Trastevere di notte</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="city-panel" id="panel-1">
+      <div class="photo-stack" data-depth>
+        <div class="photo-layer bg-layer" data-z="1">
+          <img src="https://images.unsplash.com/photo-1514890547357-a9ee288728e0?w=1400&q=85&fit=crop" alt="Canal Grande, Venezia" loading="lazy">
+        </div>
+        <div class="photo-layer fg-layer" data-z="2">
+          <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=700&q=80&fit=crop" alt="Gondole" loading="lazy">
+        </div>
+      </div>
+      <div class="city-story">
+        <span class="city-num">02</span>
+        <h2 class="city-name">Venezia</h2>
+        <p class="city-sub"><em>La Serenissima</em></p>
+        <p class="city-desc">شهری روی آب، جایی که کانال‌ها به جای خیابان هستند. ونیز رویایی است که واقعی به نظر می‌رسد.</p>
+        <ul class="highlights">
+          <li>Canal Grande al tramonto</li>
+          <li>Piazza San Marco</li>
+          <li>Gondola sotto la luna</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="city-panel" id="panel-2">
+      <div class="photo-stack" data-depth>
+        <div class="photo-layer bg-layer" data-z="1">
+          <img src="https://images.unsplash.com/photo-1541370976299-4d24ebbc9077?w=1400&q=85&fit=crop" alt="Duomo di Firenze" loading="lazy">
+        </div>
+        <div class="photo-layer fg-layer" data-z="2">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=80&fit=crop" alt="Ponte Vecchio" loading="lazy">
+        </div>
+      </div>
+      <div class="city-story">
+        <span class="city-num">03</span>
+        <h2 class="city-name">Firenze</h2>
+        <p class="city-sub"><em>La Culla del Rinascimento</em></p>
+        <p class="city-desc">گهواره رنسانس، جایی که هنر و زیبایی در هر خیابان جاری است. فلورانس شهر میکل‌آنژ و داوینچی است.</p>
+        <ul class="highlights">
+          <li>Duomo al mattino</li>
+          <li>Ponte Vecchio</li>
+          <li>Galleria degli Uffizi</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="city-panel" id="panel-3">
+      <div class="photo-stack" data-depth>
+        <div class="photo-layer bg-layer" data-z="1">
+          <img src="https://images.unsplash.com/photo-1533165558840-4904f3be3c89?w=1400&q=85&fit=crop" alt="Costiera Amalfitana" loading="lazy">
+        </div>
+        <div class="photo-layer fg-layer" data-z="2">
+          <img src="https://images.unsplash.com/photo-1572272977747-a6a9ad53b0c5?w=700&q=80&fit=crop" alt="Positano" loading="lazy">
+        </div>
+      </div>
+      <div class="city-story">
+        <span class="city-num">04</span>
+        <h2 class="city-name">Amalfi</h2>
+        <p class="city-sub"><em>Il Paradiso Mediterraneo</em></p>
+        <p class="city-desc">ساحلی که رویا در آن زندگی می‌کند. خانه‌های رنگارنگ روی صخره‌ها، آب‌های فیروزه‌ای و عطر لیمو در هوا.</p>
+        <ul class="highlights">
+          <li>Scogliere di Positano</li>
+          <li>Acque turchesi</li>
+          <li>Profumo di limoni</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="city-panel" id="panel-4">
+      <div class="photo-stack" data-depth>
+        <div class="photo-layer bg-layer" data-z="1">
+          <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=1400&q=85&fit=crop" alt="Cinque Terre" loading="lazy">
+        </div>
+        <div class="photo-layer fg-layer" data-z="2">
+          <img src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=700&q=80&fit=crop" alt="Cinque Terre colori" loading="lazy">
+        </div>
+      </div>
+      <div class="city-story">
+        <span class="city-num">05</span>
+        <h2 class="city-name">Cinque Terre</h2>
+        <p class="city-sub"><em>Le Cinque Perle</em></p>
+        <p class="city-desc">پنج دهکده رنگارنگ روی صخره‌های دریا. جایی که طبیعت و معماری در هم آمیخته‌اند و هر تصویر مثل نقاشی است.</p>
+        <ul class="highlights">
+          <li>Vernazza al tramonto</li>
+          <li>Sentiero Azzurro</li>
+          <li>Colori di Riomaggiore</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <section id="finale">
+    <div class="finale-inner">
+      <p class="finale-quote"><em>"L'Italia è un sogno<br>che continua a svegliarsi."</em></p>
+      <p class="finale-love">Con tutto il mio amore</p>
+      <p class="finale-name">Mahasti</p>
+      <p class="finale-heart">♥</p>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
