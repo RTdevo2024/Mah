@@ -197,6 +197,12 @@ body {
   background: linear-gradient(160deg, #1c1410 0%, #0d0b0a 100%);
 }
 
+#panel-0 .photo-stack { background: linear-gradient(160deg, #3a1a0a, #1a0d06); }
+#panel-1 .photo-stack { background: linear-gradient(160deg, #0a1a3a, #060d1a); }
+#panel-2 .photo-stack { background: linear-gradient(160deg, #2a1a08, #140d04); }
+#panel-3 .photo-stack { background: linear-gradient(160deg, #0a2a3a, #04121a); }
+#panel-4 .photo-stack { background: linear-gradient(160deg, #1a2a0a, #0d1404); }
+
 .photo-layer {
   position: absolute;
   will-change: transform;

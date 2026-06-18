@@ -168,7 +168,9 @@ function initNav() {
 function initLazyImages() {
   document.querySelectorAll('.photo-layer img').forEach(img => {
     const mark = () => img.classList.add('loaded');
-    img.complete ? mark() : img.addEventListener('load', mark);
+    if (img.complete) { mark(); return; }
+    img.addEventListener('load', mark);
+    img.addEventListener('error', mark);
   });
 }
 
