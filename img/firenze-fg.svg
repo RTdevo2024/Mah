@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="pvsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d0808"/>
+      <stop offset="40%" stop-color="#3a1808"/>
+      <stop offset="70%" stop-color="#8a4018"/>
+      <stop offset="100%" stop-color="#c87828"/>
+    </linearGradient>
+    <linearGradient id="pvwater" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a1808"/>
+      <stop offset="100%" stop-color="#100804"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="600" fill="url(#pvsky)"/>
+
+  <!-- Sun -->
+  <circle cx="400" cy="240" r="42" fill="#f5e070" opacity="0.9"/>
+  <circle cx="400" cy="240" r="32" fill="#fffbc0"/>
+
+  <!-- Stars (few, twilight) -->
+  <g fill="#f5f0e8" opacity="0.4">
+    <circle cx="80" cy="60" r="1.5"/><circle cx="180" cy="35" r="1"/><circle cx="630" cy="50" r="1.5"/>
+    <circle cx="720" cy="30" r="1"/><circle cx="760" cy="80" r="2"/>
+  </g>
+
+  <!-- Arno River -->
+  <rect x="0" y="400" width="800" height="200" fill="url(#pvwater)"/>
+  <!-- Water reflections / shimmer -->
+  <g stroke="#6a3010" stroke-width="1" opacity="0.4" fill="none">
+    <path d="M 0 420 Q 200 413 400 420 Q 600 427 800 420"/>
+    <path d="M 0 442 Q 200 435 400 442 Q 600 449 800 442"/>
+    <path d="M 0 468 Q 300 460 600 468 Q 720 472 800 468"/>
+    <path d="M 0 498 Q 400 490 800 498"/>
+  </g>
+
+  <!-- Ponte Vecchio — bridge structure -->
+  <!-- Bridge base -->
+  <path d="M 0 390 Q 100 380 200 382 Q 400 378 600 380 Q 700 381 800 388 L 800 420 L 0 420 Z" fill="#120808"/>
+
+  <!-- Main arches (3 arches) -->
+  <g fill="#1a0e06">
+    <!-- Left arch -->
+    <path d="M 60 418 L 60 370 Q 60 345 80 340 L 195 340 Q 215 345 215 370 L 215 418 Z"/>
+    <path d="M 90 390 Q 140 340 190 390" fill="#0a0604" stroke="#140a04" stroke-width="1"/>
+    <!-- Center arch -->
+    <path d="M 285 418 L 285 360 Q 285 330 310 322 L 495 322 Q 520 330 520 360 L 520 418 Z"/>
+    <path d="M 310 390 Q 402 325 495 390" fill="#0a0604" stroke="#140a04" stroke-width="1"/>
+    <!-- Right arch -->
+    <path d="M 585 418 L 585 370 Q 585 345 605 340 L 720 340 Q 740 345 740 370 L 740 418 Z"/>
+    <path d="M 610 390 Q 660 340 710 390" fill="#0a0604" stroke="#140a04" stroke-width="1"/>
+  </g>
+
+  <!-- Shops ON the bridge (the unique feature of Ponte Vecchio) -->
+  <!-- Main shop row -->
+  <rect x="40" y="290" width="720" height="90" fill="#140a04"/>
+  <!-- Shop facades -->
+  <g fill="#0e0802">
+    <rect x="40" y="290" width="55" height="90"/>
+    <rect x="100" y="290" width="55" height="90"/>
+    <rect x="160" y="285" width="60" height="95"/>
+    <rect x="225" y="285" width="60" height="95"/>
+    <rect x="290" y="280" width="65" height="100"/>
+    <rect x="360" y="278" width="85" height="102"/>
+    <rect x="450" y="278" width="75" height="102"/>
+    <rect x="530" y="280" width="60" height="100"/>
+    <rect x="595" y="285" width="55" height="95"/>
+    <rect x="655" y="285" width="55" height="95"/>
+    <rect x="715" y="290" width="45" height="90"/>
+  </g>
+
+  <!-- Shop windows (golden lit) -->
+  <g fill="#c9a84c" opacity="0.6">
+    <rect x="48" y="305" width="18" height="25" rx="2"/>
+    <rect x="72" y="305" width="18" height="25" rx="2"/>
+    <rect x="108" y="305" width="18" height="25" rx="2"/>
+    <rect x="132" y="305" width="18" height="25" rx="2"/>
+    <rect x="168" y="300" width="18" height="25" rx="2"/>
+    <rect x="192" y="300" width="18" height="25" rx="2"/>
+    <rect x="233" y="300" width="18" height="25" rx="2"/>
+    <rect x="257" y="300" width="18" height="25" rx="2"/>
+    <rect x="298" y="295" width="20" height="28" rx="2"/>
+    <rect x="325" y="295" width="20" height="28" rx="2"/>
+    <rect x="368" y="293" width="22" height="30" rx="2"/>
+    <rect x="400" y="293" width="22" height="30" rx="2"/>
+    <rect x="432" y="293" width="22" height="30" rx="2"/>
+    <rect x="458" y="293" width="22" height="30" rx="2"/>
+    <rect x="492" y="295" width="20" height="28" rx="2"/>
+    <rect x="518" y="295" width="20" height="28" rx="2"/>
+    <rect x="538" y="297" width="18" height="26" rx="2"/>
+    <rect x="562" y="297" width="18" height="26" rx="2"/>
+    <rect x="602" y="300" width="18" height="25" rx="2"/>
+    <rect x="626" y="300" width="18" height="25" rx="2"/>
+    <rect x="663" y="300" width="18" height="25" rx="2"/>
+    <rect x="687" y="300" width="18" height="25" rx="2"/>
+    <rect x="722" y="305" width="18" height="25" rx="2"/>
+  </g>
+
+  <!-- Shop roof overhang boxes (the characteristic "boxes" hanging over the Arno) -->
+  <g fill="#0c0602" stroke="#1a0e06" stroke-width="1">
+    <rect x="30" y="265" width="75" height="28"/>
+    <rect x="108" y="260" width="80" height="28"/>
+    <rect x="190" y="256" width="80" height="28"/>
+    <rect x="272" y="250" width="80" height="28"/>
+    <rect x="440" y="248" width="80" height="28"/>
+    <rect x="524" y="250" width="80" height="28"/>
+    <rect x="606" y="256" width="80" height="28"/>
+    <rect x="688" y="262" width="75" height="28"/>
+  </g>
+
+  <!-- Bridge parapets / railings -->
+  <rect x="0" y="277" width="800" height="14" fill="#18100a"/>
+
+  <!-- Sun reflection on Arno -->
+  <ellipse cx="400" cy="450" rx="90" ry="20" fill="#e89030" opacity="0.18"/>
+  <line x1="400" y1="415" x2="400" y2="530" stroke="#c9a84c" stroke-width="3" opacity="0.12"/>
+
+  <!-- Building reflections -->
+  <g opacity="0.2">
+    <rect x="50" y="420" width="50" height="100" fill="#2a1808"/>
+    <rect x="680" y="420" width="50" height="100" fill="#2a1808"/>
+  </g>
+
+  <!-- Left embankment buildings -->
+  <rect x="0" y="200" width="60" height="200" fill="#100804"/>
+  <rect x="65" y="220" width="50" height="180" fill="#140a06"/>
+  <!-- Right embankment buildings -->
+  <rect x="700" y="195" width="60" height="205" fill="#100804"/>
+  <rect x="745" y="215" width="55" height="185" fill="#140a06"/>
+
+  <!-- Atmospheric warm haze -->
+  <rect x="0" y="0" width="800" height="600" fill="#8a3010" opacity="0.06"/>
+</svg>

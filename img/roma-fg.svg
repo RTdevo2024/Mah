@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0814"/>
+      <stop offset="50%" stop-color="#1a1030"/>
+      <stop offset="100%" stop-color="#2a1a48"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="70%" cy="20%" r="15%">
+      <stop offset="0%" stop-color="#f5ecc8" stop-opacity="1"/>
+      <stop offset="60%" stop-color="#c9a84c" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0a0814" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a3060"/>
+      <stop offset="100%" stop-color="#0a0a20"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Night sky -->
+  <rect width="800" height="600" fill="url(#sky2)"/>
+  <ellipse cx="560" cy="120" rx="120" ry="80" fill="url(#moon)"/>
+  <circle cx="560" cy="105" r="30" fill="#f5ecc8" opacity="0.92"/>
+
+  <!-- Stars -->
+  <g fill="#f5f0e8" opacity="0.7">
+    <circle cx="50" cy="50" r="1.5"/><circle cx="120" cy="30" r="1"/><circle cx="200" cy="80" r="2"/>
+    <circle cx="290" cy="45" r="1"/><circle cx="380" cy="25" r="1.5"/><circle cx="450" cy="70" r="1"/>
+    <circle cx="650" cy="60" r="1.5"/><circle cx="720" cy="35" r="1"/><circle cx="760" cy="90" r="1.5"/>
+    <circle cx="100" cy="140" r="1"/><circle cx="310" cy="120" r="1.5"/><circle cx="480" cy="155" r="1"/>
+  </g>
+
+  <!-- Water pool (Trevi basin) -->
+  <ellipse cx="400" cy="480" rx="320" ry="80" fill="url(#water)"/>
+  <!-- Water shimmer lines -->
+  <g stroke="#4a5898" stroke-width="1" opacity="0.4">
+    <line x1="120" y1="465" x2="280" y2="462"/>
+    <line x1="300" y1="478" x2="500" y2="475"/>
+    <line x1="530" y1="490" x2="680" y2="487"/>
+    <line x1="150" y1="492" x2="350" y2="489"/>
+    <line x1="420" y1="502" x2="620" y2="499"/>
+  </g>
+
+  <!-- Moon reflection in water -->
+  <ellipse cx="400" cy="500" rx="30" ry="8" fill="#c9a84c" opacity="0.3"/>
+  <line x1="400" y1="470" x2="400" y2="510" stroke="#c9a84c" stroke-width="2" opacity="0.15"/>
+
+  <!-- Fountain base/steps -->
+  <ellipse cx="400" cy="420" rx="290" ry="50" fill="#1a1428"/>
+  <ellipse cx="400" cy="410" rx="260" ry="40" fill="#221c38"/>
+  <ellipse cx="400" cy="400" rx="230" ry="35" fill="#2a2244"/>
+
+  <!-- Main fountain structure (Palazzo facade backdrop) -->
+  <!-- Central arch -->
+  <path d="M 300 390 L 300 180 Q 300 140 340 130 L 400 120 L 460 130 Q 500 140 500 180 L 500 390 Z" fill="#1e1830"/>
+  <!-- Side columns -->
+  <rect x="255" y="190" width="30" height="200" fill="#18142a"/>
+  <rect x="515" y="190" width="30" height="200" fill="#18142a"/>
+  <!-- Outer wings -->
+  <rect x="140" y="230" width="110" height="160" fill="#141020"/>
+  <rect x="550" y="230" width="110" height="160" fill="#141020"/>
+
+  <!-- Arch detail -->
+  <path d="M 310 180 Q 400 100 490 180" fill="none" stroke="#c9a84c" stroke-width="2" opacity="0.6"/>
+
+  <!-- Neptune figure (simplified) -->
+  <ellipse cx="400" cy="280" rx="25" ry="60" fill="#2a2448"/>
+  <circle cx="400" cy="220" r="18" fill="#221c3c"/>
+  <!-- Trident -->
+  <line x1="430" y1="210" x2="430" y2="320" stroke="#c9a84c" stroke-width="2" opacity="0.8"/>
+  <line x1="420" y1="218" x2="420" y2="225" stroke="#c9a84c" stroke-width="1.5" opacity="0.8"/>
+  <line x1="430" y1="213" x2="430" y2="220" stroke="#c9a84c" stroke-width="1.5" opacity="0.8"/>
+  <line x1="440" y1="218" x2="440" y2="225" stroke="#c9a84c" stroke-width="1.5" opacity="0.8"/>
+
+  <!-- Side statues -->
+  <ellipse cx="310" cy="310" rx="15" ry="45" fill="#201a34"/>
+  <circle cx="310" cy="265" r="12" fill="#1a1430"/>
+  <ellipse cx="490" cy="310" rx="15" ry="45" fill="#201a34"/>
+  <circle cx="490" cy="265" r="12" fill="#1a1430"/>
+
+  <!-- Water streams (fountain jets) -->
+  <path d="M 370 340 Q 340 370 320 410" fill="none" stroke="#6080c8" stroke-width="3" opacity="0.6"/>
+  <path d="M 400 320 Q 400 360 400 410" fill="none" stroke="#6080c8" stroke-width="3" opacity="0.5"/>
+  <path d="M 430 340 Q 460 370 480 410" fill="none" stroke="#6080c8" stroke-width="3" opacity="0.6"/>
+  <path d="M 350 360 Q 310 390 280 420" fill="none" stroke="#4060a8" stroke-width="2" opacity="0.4"/>
+  <path d="M 450 360 Q 490 390 520 420" fill="none" stroke="#4060a8" stroke-width="2" opacity="0.4"/>
+
+  <!-- Window details on facade -->
+  <g fill="#3a305a" opacity="0.8">
+    <rect x="165" y="255" width="25" height="38" rx="12"/>
+    <rect x="210" y="255" width="25" height="38" rx="12"/>
+    <rect x="565" y="255" width="25" height="38" rx="12"/>
+    <rect x="610" y="255" width="25" height="38" rx="12"/>
+  </g>
+
+  <!-- Gold coin glow in water -->
+  <g fill="#c9a84c" opacity="0.25">
+    <circle cx="350" cy="490" r="4"/><circle cx="400" cy="485" r="3"/><circle cx="460" cy="492" r="4"/>
+    <circle cx="310" cy="498" r="3"/><circle cx="510" cy="495" r="3"/>
+  </g>
+
+  <!-- Atmospheric overlay -->
+  <rect x="0" y="0" width="800" height="600" fill="#0a0814" opacity="0.15"/>
+</svg>
