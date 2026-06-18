@@ -160,7 +160,6 @@ function initNav() {
     });
   });
 
-  // set initial indicator after nav becomes visible
   setTimeout(() => moveTo(btns[0]), 600);
 }
 
