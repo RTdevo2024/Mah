@@ -1,0 +1,58 @@
+name: Download City Photos
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download Italian city photos
+        run: |
+          mkdir -p img
+          UA="Mozilla/5.0 (compatible; GitHub-Actions)"
+
+          echo "Downloading Roma..."
+          curl -L -A "$UA" -o img/roma-bg.jpg \
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1200px-Colosseo_2020.jpg"
+          curl -L -A "$UA" -o img/roma-fg.jpg \
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Fontana_di_Trevi.jpg/800px-Fontana_di_Trevi.jpg"
+
+          echo "Downloading Venezia..."
+          curl -L -A "$UA" -o img/venezia-bg.jpg \
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Venice_Canal_Grande_from_Rialto_bridge.jpg/1200px-Venice_Canal_Grande_from_Rialto_bridge.jpg"
+          curl -L -A "$UA" -o img/venezia-fg.jpg \
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Gondola_venezia.jpg/800px-Gondola_venezia.jpg"
+
+          echo "Downloading Firenze..."
+          curl -L -A "$UA" -o img/firenze-bg.jpg \
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Florence_Duomo_from_Giotto%27s_Campanile.JPG/1200px-Florence_Duomo_from_Giotto%27s_Campanile.JPG"
+          curl -L -A "$UA" -o img/firenze-fg.jpg \
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Ponte_vecchio_florence.jpg/800px-Ponte_vecchio_florence.jpg"
+
+          echo "Downloading Amalfi..."
+          curl -L -A "$UA" -o img/amalfi-bg.jpg \
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Positano_-_panoramio.jpg/1200px-Positano_-_panoramio.jpg"
+          curl -L -A "$UA" -o img/amalfi-fg.jpg \
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Positano%2C_Italy.jpg/800px-Positano%2C_Italy.jpg"
+
+          echo "Downloading Cinque Terre..."
+          curl -L -A "$UA" -o img/cinque-bg.jpg \
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Manarola_Cinque_Terre_Italy.jpg/1200px-Manarola_Cinque_Terre_Italy.jpg"
+          curl -L -A "$UA" -o img/cinque-fg.jpg \
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Riomaggiore.jpg/800px-Riomaggiore.jpg"
+
+          echo "--- Downloaded files ---"
+          ls -lh img/*.jpg
+
+      - name: Commit and push photos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add img/
+          git diff --staged --quiet && echo "No changes" || git commit -m "Add real Italian city photos"
+          git push
