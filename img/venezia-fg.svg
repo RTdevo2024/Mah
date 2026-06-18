@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="gcsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#08101e"/>
+      <stop offset="60%" stop-color="#10203c"/>
+      <stop offset="100%" stop-color="#182a50"/>
+    </linearGradient>
+    <linearGradient id="gcwater" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#162244"/>
+      <stop offset="100%" stop-color="#06080e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#gcsky)"/>
+
+  <!-- Stars -->
+  <g fill="#e8f0ff" opacity="0.6">
+    <circle cx="60" cy="40" r="1.5"/><circle cx="150" cy="25" r="1"/><circle cx="280" cy="55" r="1.5"/>
+    <circle cx="420" cy="20" r="2"/><circle cx="560" cy="45" r="1"/><circle cx="680" cy="30" r="1.5"/>
+    <circle cx="750" cy="70" r="1"/><circle cx="320" cy="90" r="1.5"/><circle cx="490" cy="80" r="1"/>
+  </g>
+
+  <!-- Canal water -->
+  <rect x="0" y="380" width="800" height="220" fill="url(#gcwater)"/>
+
+  <!-- Water ripples -->
+  <g stroke="#1e3060" stroke-width="1" opacity="0.6" fill="none">
+    <path d="M 0 400 Q 200 393 400 400 Q 600 407 800 400"/>
+    <path d="M 0 420 Q 200 413 400 420 Q 600 427 800 420"/>
+    <path d="M 0 445 Q 250 437 500 445 Q 700 452 800 445"/>
+    <path d="M 0 475 Q 300 467 600 475 Q 720 479 800 475"/>
+  </g>
+
+  <!-- Building reflections -->
+  <g opacity="0.25">
+    <rect x="30" y="385" width="80" height="150" fill="#1e2a50"/>
+    <rect x="120" y="390" width="60" height="140" fill="#182040"/>
+    <rect x="560" y="385" width="90" height="160" fill="#1a2848"/>
+    <rect x="660" y="392" width="70" height="145" fill="#1e2a50"/>
+  </g>
+
+  <!-- Buildings left -->
+  <rect x="0" y="180" width="85" height="200" fill="#0a1220" rx="1"/>
+  <rect x="90" y="200" width="70" height="180" fill="#0c1428" rx="1"/>
+  <!-- Arched windows left -->
+  <g fill="#c9a84c" opacity="0.45">
+    <path d="M 20 220 L 20 255 Q 20 265 30 265 L 48 265 Q 58 265 58 255 L 58 220 Q 58 210 48 210 L 30 210 Q 20 210 20 220 Z"/>
+    <path d="M 20 280 L 20 315 Q 20 325 30 325 L 48 325 Q 58 325 58 315 L 58 280 Q 58 270 48 270 L 30 270 Q 20 270 20 280 Z"/>
+    <path d="M 100 230 L 100 265 Q 100 275 108 275 L 126 275 Q 136 275 136 265 L 136 230 Q 136 220 126 220 L 108 220 Q 100 220 100 230 Z"/>
+  </g>
+
+  <!-- Buildings right -->
+  <rect x="635" y="175" width="80" height="205" fill="#0a1220" rx="1"/>
+  <rect x="720" y="195" width="80" height="185" fill="#0c1428" rx="1"/>
+  <!-- Arched windows right -->
+  <g fill="#c9a84c" opacity="0.45">
+    <path d="M 650 215 L 650 250 Q 650 260 658 260 L 676 260 Q 686 260 686 250 L 686 215 Q 686 205 676 205 L 658 205 Q 650 205 650 215 Z"/>
+    <path d="M 650 275 L 650 310 Q 650 320 658 320 L 676 320 Q 686 320 686 310 L 686 275 Q 686 265 676 265 L 658 265 Q 650 265 650 275 Z"/>
+    <path d="M 730 220 L 730 255 Q 730 265 738 265 L 756 265 Q 766 265 766 255 L 766 220 Q 766 210 756 210 L 738 210 Q 730 210 730 220 Z"/>
+  </g>
+
+  <!-- Canal walls -->
+  <rect x="0" y="360" width="800" height="25" fill="#0e1830"/>
+  <!-- Stone texture lines -->
+  <g stroke="#162240" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="368" x2="200" y2="368"/>
+    <line x1="220" y1="368" x2="420" y2="368"/>
+    <line x1="440" y1="368" x2="640" y2="368"/>
+    <line x1="660" y1="368" x2="800" y2="368"/>
+  </g>
+
+  <!-- Gondola — main body -->
+  <path d="M 180 355 Q 220 342 320 338 Q 420 334 500 338 Q 580 342 620 355 Q 600 375 560 378 Q 440 385 320 382 Q 220 380 200 372 Z" fill="#050810"/>
+  <!-- Gondola curves at ends -->
+  <path d="M 620 355 Q 645 348 660 358 Q 650 368 638 370 Q 625 368 620 360 Z" fill="#060912"/>
+  <path d="M 180 355 Q 165 348 150 360 Q 158 372 170 374 Q 183 372 187 365 Z" fill="#060912"/>
+  <!-- Gondola ferro (prow ornament) -->
+  <path d="M 655 350 L 670 330 L 675 308 L 668 295 L 672 282 L 665 275 L 658 282 L 662 295 L 655 308 Z" fill="#c9a84c" opacity="0.8"/>
+  <!-- Gondola seats/cushions -->
+  <rect x="340" y="340" width="80" height="28" rx="5" fill="#1a1030"/>
+  <rect x="345" y="343" width="70" height="22" rx="4" fill="#2a1845"/>
+
+  <!-- Gondolier figure -->
+  <rect x="500" y="310" width="12" height="40" fill="#080c18"/>
+  <circle cx="506" cy="305" r="9" fill="#0a0e1c"/>
+  <!-- Hat -->
+  <path d="M 497 300 L 515 300 L 512 295 L 500 295 Z" fill="#141828"/>
+  <rect x="498" y="293" width="16" height="6" rx="2" fill="#1a2038"/>
+  <!-- Red sash -->
+  <rect x="499" y="330" width="12" height="4" fill="#8b3a18"/>
+  <!-- Oar -->
+  <line x1="510" y1="315" x2="555" y2="375" stroke="#1e2a40" stroke-width="3"/>
+  <line x1="550" y1="370" x2="560" y2="380" stroke="#1e2a40" stroke-width="4"/>
+
+  <!-- Lamppost left -->
+  <line x1="80" y1="180" x2="80" y2="365" stroke="#1a2a48" stroke-width="3"/>
+  <circle cx="80" cy="178" r="8" fill="#c9a84c" opacity="0.8"/>
+  <ellipse cx="80" cy="185" rx="14" ry="5" fill="#c9a84c" opacity="0.2"/>
+  <!-- Reflection -->
+  <line x1="80" y1="380" x2="80" y2="450" stroke="#c9a84c" stroke-width="2" opacity="0.15"/>
+
+  <!-- Lamppost right -->
+  <line x1="720" y1="180" x2="720" y2="365" stroke="#1a2a48" stroke-width="3"/>
+  <circle cx="720" cy="178" r="8" fill="#c9a84c" opacity="0.8"/>
+  <ellipse cx="720" cy="185" rx="14" ry="5" fill="#c9a84c" opacity="0.2"/>
+  <line x1="720" y1="380" x2="720" y2="450" stroke="#c9a84c" stroke-width="2" opacity="0.15"/>
+
+  <!-- Moon reflection -->
+  <ellipse cx="400" cy="430" rx="18" ry="6" fill="#f0e8c0" opacity="0.2"/>
+  <line x1="400" y1="380" x2="400" y2="500" stroke="#f0e8c0" stroke-width="1.5" opacity="0.08"/>
+
+  <!-- Atmospheric vignette -->
+  <rect x="0" y="0" width="800" height="600" fill="#08101e" opacity="0.18"/>
+</svg>

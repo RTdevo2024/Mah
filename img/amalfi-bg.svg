@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="asky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#060c1c"/>
+      <stop offset="35%" stop-color="#0e2044"/>
+      <stop offset="65%" stop-color="#184870"/>
+      <stop offset="100%" stop-color="#206090"/>
+    </linearGradient>
+    <linearGradient id="asea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a5070"/>
+      <stop offset="50%" stop-color="#0e2a48"/>
+      <stop offset="100%" stop-color="#06101e"/>
+    </linearGradient>
+    <radialGradient id="amoon" cx="75%" cy="18%" r="16%">
+      <stop offset="0%" stop-color="#f0e8c0" stop-opacity="1"/>
+      <stop offset="55%" stop-color="#c0a050" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#060c1c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="acliff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a1c10"/>
+      <stop offset="100%" stop-color="#1a1008"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1200" height="800" fill="url(#asky)"/>
+
+  <!-- Moon glow -->
+  <ellipse cx="900" cy="145" rx="150" ry="95" fill="url(#amoon)"/>
+  <circle cx="900" cy="130" r="36" fill="#f0e8c0" opacity="0.93"/>
+  <circle cx="900" cy="130" r="28" fill="#fffbe8"/>
+
+  <!-- Stars -->
+  <g fill="#e8f0ff" opacity="0.55">
+    <circle cx="50" cy="55" r="2"/><circle cx="130" cy="28" r="1.5"/><circle cx="220" cy="72" r="1"/>
+    <circle cx="310" cy="38" r="1.5"/><circle cx="420" cy="20" r="2"/><circle cx="530" cy="60" r="1"/>
+    <circle cx="620" cy="35" r="1.5"/><circle cx="710" cy="55" r="1"/><circle cx="1020" cy="48" r="1.5"/>
+    <circle cx="1080" cy="22" r="1"/><circle cx="1150" cy="68" r="2"/><circle cx="1000" cy="95" r="1"/>
+    <circle cx="160" cy="120" r="1"/><circle cx="360" cy="105" r="1.5"/><circle cx="580" cy="95" r="1"/>
+  </g>
+
+  <!-- Sea -->
+  <rect x="0" y="540" width="1200" height="260" fill="url(#asea)"/>
+
+  <!-- Moon reflection on sea -->
+  <path d="M 860 550 Q 900 560 940 550 Q 920 600 900 640 Q 880 600 860 550 Z" fill="#c9a84c" opacity="0.18"/>
+  <line x1="900" y1="545" x2="900" y2="700" stroke="#c9a84c" stroke-width="4" opacity="0.1"/>
+
+  <!-- Sea shimmer -->
+  <g stroke="#2a5080" stroke-width="1.5" opacity="0.5" fill="none">
+    <path d="M 0 560 Q 300 552 600 560 Q 900 568 1200 560"/>
+    <path d="M 0 585 Q 400 577 800 585 Q 1000 589 1200 585"/>
+    <path d="M 0 615 Q 500 607 1000 615 Q 1100 619 1200 615"/>
+    <path d="M 0 648 Q 600 640 1200 648"/>
+  </g>
+
+  <!-- Cliff face -->
+  <path d="M 0 800 L 0 420 Q 50 380 120 360 Q 180 345 240 350 L 280 540 L 0 540 Z" fill="url(#acliff)"/>
+  <path d="M 1200 800 L 1200 460 Q 1150 420 1080 400 Q 1020 385 960 395 L 920 540 L 1200 540 Z" fill="url(#acliff)"/>
+
+  <!-- Main cliff/hillside with houses -->
+  <path d="M 120 540 L 140 480 Q 160 420 200 390 Q 260 348 340 330 Q 420 312 500 305 Q 580 300 660 302 Q 740 305 810 315 Q 880 328 930 355 Q 970 378 990 420 L 1010 540 Z" fill="#1e1208"/>
+
+  <!-- POSITANO style — colorful houses stacked on cliff -->
+  <!-- Row 1 (bottom, near sea) -->
+  <g fill="#8b2a1a"><rect x="160" y="480" width="42" height="55" rx="2"/></g>
+  <g fill="#c8783a"><rect x="207" y="475" width="38" height="58" rx="2"/></g>
+  <g fill="#d4a84c"><rect x="250" y="472" width="45" height="60" rx="2"/></g>
+  <g fill="#2a6a4a"><rect x="300" y="475" width="40" height="58" rx="2"/></g>
+  <g fill="#c8b060"><rect x="345" y="470" width="42" height="62" rx="2"/></g>
+  <g fill="#e84a3a"><rect x="392" y="468" width="38" height="63" rx="2"/></g>
+  <g fill="#4a80a8"><rect x="435" y="465" width="44" height="65" rx="2"/></g>
+  <g fill="#c8783a"><rect x="484" y="462" width="40" height="67" rx="2"/></g>
+  <g fill="#8b2a1a"><rect x="529" y="460" width="42" height="68" rx="2"/></g>
+  <g fill="#d4a84c"><rect x="576" y="462" width="38" height="67" rx="2"/></g>
+  <g fill="#4a80a8"><rect x="619" y="465" width="44" height="65" rx="2"/></g>
+  <g fill="#2a6a4a"><rect x="668" y="468" width="40" height="62" rx="2"/></g>
+  <g fill="#c8b060"><rect x="713" y="470" width="42" height="60" rx="2"/></g>
+  <g fill="#e84a3a"><rect x="760" y="473" width="38" height="58" rx="2"/></g>
+  <g fill="#c8783a"><rect x="803" y="476" width="42" height="56" rx="2"/></g>
+  <g fill="#8b2a1a"><rect x="850" y="480" width="40" height="55" rx="2"/></g>
+
+  <!-- Row 2 (higher up) -->
+  <g fill="#c8b060"><rect x="180" y="420" width="38" height="52" rx="2"/></g>
+  <g fill="#4a80a8"><rect x="223" y="415" width="42" height="56" rx="2"/></g>
+  <g fill="#8b2a1a"><rect x="270" y="410" width="40" height="58" rx="2"/></g>
+  <g fill="#2a6a4a"><rect x="315" y="406" width="44" height="60" rx="2"/></g>
+  <g fill="#c8783a"><rect x="364" y="402" width="40" height="64" rx="2"/></g>
+  <g fill="#d4a84c"><rect x="409" y="398" width="42" height="66" rx="2"/></g>
+  <g fill="#e84a3a"><rect x="456" y="395" width="38" height="68" rx="2"/></g>
+  <g fill="#4a80a8"><rect x="499" y="392" width="44" height="70" rx="2"/></g>
+  <g fill="#c8b060"><rect x="548" y="393" width="40" height="68" rx="2"/></g>
+  <g fill="#8b2a1a"><rect x="593" y="395" width="42" height="68" rx="2"/></g>
+  <g fill="#2a6a4a"><rect x="640" y="398" width="38" height="66" rx="2"/></g>
+  <g fill="#c8783a"><rect x="683" y="402" width="44" height="64" rx="2"/></g>
+  <g fill="#d4a84c"><rect x="732" y="406" width="40" height="60" rx="2"/></g>
+  <g fill="#e84a3a"><rect x="777" y="412" width="38" height="56" rx="2"/></g>
+  <g fill="#4a80a8"><rect x="820" y="418" width="40" height="52" rx="2"/></g>
+
+  <!-- Row 3 (higher) -->
+  <g fill="#e84a3a"><rect x="210" y="358" width="36" height="48" rx="2"/></g>
+  <g fill="#d4a84c"><rect x="251" y="352" width="40" height="52" rx="2"/></g>
+  <g fill="#4a80a8"><rect x="296" y="347" width="38" height="55" rx="2"/></g>
+  <g fill="#c8783a"><rect x="339" y="343" width="42" height="58" rx="2"/></g>
+  <g fill="#8b2a1a"><rect x="386" y="338" width="38" height="58" rx="2"/></g>
+  <g fill="#2a6a4a"><rect x="429" y="334" width="44" height="62" rx="2"/></g>
+  <g fill="#c8b060"><rect x="478" y="330" width="40" height="65" rx="2"/></g>
+  <g fill="#e84a3a"><rect x="523" y="328" width="42" height="66" rx="2"/></g>
+  <g fill="#4a80a8"><rect x="570" y="330" width="38" height="65" rx="2"/></g>
+  <g fill="#d4a84c"><rect x="613" y="332" width="42" height="64" rx="2"/></g>
+  <g fill="#c8783a"><rect x="660" y="336" width="40" height="62" rx="2"/></g>
+  <g fill="#8b2a1a"><rect x="705" y="340" width="38" height="58" rx="2"/></g>
+  <g fill="#2a6a4a"><rect x="748" y="345" width="40" height="56" rx="2"/></g>
+  <g fill="#c8b060"><rect x="793" y="350" width="38" height="52" rx="2"/></g>
+
+  <!-- Church/campanile at top center -->
+  <rect x="580" y="265" width="40" height="65" fill="#e8d8a0"/>
+  <path d="M 575 265 L 600 238 L 625 265 Z" fill="#d4b870"/>
+  <rect x="596" y="232" width="8" height="14" fill="#c8a848"/>
+  <!-- Bell tower -->
+  <rect x="638" y="248" width="22" height="80" fill="#d8c890"/>
+  <path d="M 634 252 L 649 230 L 664 252 Z" fill="#c8b070"/>
+  <rect x="642" y="262" width="14" height="20" rx="7" fill="#8b6a28" opacity="0.6"/>
+
+  <!-- Windows lit on houses -->
+  <g fill="#f5e8a0" opacity="0.65">
+    <rect x="165" y="492" width="8" height="12" rx="1"/><rect x="178" y="492" width="8" height="12" rx="1"/>
+    <rect x="213" y="488" width="8" height="12" rx="1"/><rect x="226" y="488" width="8" height="12" rx="1"/>
+    <rect x="258" y="484" width="8" height="12" rx="1"/><rect x="271" y="484" width="8" height="12" rx="1"/>
+    <rect x="350" y="482" width="8" height="12" rx="1"/><rect x="363" y="482" width="8" height="12" rx="1"/>
+    <rect x="440" y="478" width="8" height="12" rx="1"/><rect x="453" y="478" width="8" height="12" rx="1"/>
+    <rect x="535" y="473" width="8" height="12" rx="1"/><rect x="548" y="473" width="8" height="12" rx="1"/>
+    <rect x="626" y="477" width="8" height="12" rx="1"/><rect x="639" y="477" width="8" height="12" rx="1"/>
+    <rect x="718" y="482" width="8" height="12" rx="1"/><rect x="731" y="482" width="8" height="12" rx="1"/>
+    <rect x="808" y="487" width="8" height="12" rx="1"/><rect x="821" y="487" width="8" height="12" rx="1"/>
+  </g>
+
+  <!-- Boats in sea -->
+  <g fill="#0e1828">
+    <path d="M 150 570 Q 190 562 230 570 Q 215 578 190 580 Q 165 578 150 570 Z"/>
+    <path d="M 950 565 Q 990 557 1030 565 Q 1015 573 990 575 Q 965 573 950 565 Z"/>
+    <path d="M 550 590 Q 580 582 610 590 Q 598 598 580 600 Q 562 598 550 590 Z"/>
+  </g>
+  <!-- Boat masts -->
+  <g stroke="#182030" stroke-width="2" opacity="0.6">
+    <line x1="190" y1="563" x2="190" y2="545"/>
+    <line x1="990" y1="558" x2="990" y2="540"/>
+    <line x1="580" y1="583" x2="580" y2="565"/>
+  </g>
+
+  <!-- Lemon trees (suggestion) -->
+  <g fill="#2a4a1a" opacity="0.7">
+    <circle cx="130" cy="360" r="25"/>
+    <circle cx="1060" cy="370" r="28"/>
+    <circle cx="1090" cy="355" r="20"/>
+  </g>
+
+  <!-- Atmospheric overlay -->
+  <rect x="0" y="0" width="1200" height="800" fill="#060c1c" opacity="0.15"/>
+</svg>
